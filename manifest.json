@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "No Horizontal Scroll on YouTube",
+  "version": "1.0",
+  "description": "Prevents horizontal scrolling on YouTube.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
